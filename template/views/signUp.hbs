@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up page</title>
+    <link rel = 'stylesheet' type = 'text/css' href = 'index.css'/>
+</head>
+<body>
+    {{>header}}
+    <main id = 'main'>
+    <div>
+         <h1 style= 'text-align:center; color:darkslategray'>Please sign up first</h1>
+        <form id = 'signUp' action='/signUp' method="post">
+            <label for = 'firstName'>first name</label><input type = 'text' id = 'firstName' name = 'firstName'placeholder="type your first name here"/>
+            <label>last name</label><input type = 'text' name = 'lastName' placeholder="type your last name here"/>
+           <label>email</label><input type = 'email' name = 'email' placeholder="type your email here"/>
+            <label for = 'phone'>phone number</label><input type = 'number' id = "phone" name = 'phone' placeholder="type your phone number here"/>
+            <label for = 'password'>password</label><input type = 'text' id= 'password' name = 'password' placeholder="type your password here"/>
+            <label for = 'confirmPassword'>confirm Password</label><input type = 'text' id = 'confirmPassword' name = 'confirmPassword' placeholder="confirm password"/>
+            <input type = 'submit' placeholder="type your here"/>
+        </form>
+    </div>
+    </main>
+    {{>footer}}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' type = 'text/css' href = 'index.css'/>
+</head>
+<body>
+    {{>header}}
+    <main id = 'main'>
+    <h1>Hello from the log in page</h1>
+    <div class="log_data">
+        
+        <form id = 'signUp' action = '/logIn' method='POST'>
+        <figure style = 'text-align:center;height:auto'>
+            <img src = 'vector-image.png'style = 'line-height:auto;'/>
+        </figure>
+        <input type = 'text' placeholder="type your email here..." name = 'email' required/>
+        <input type = 'password' placeholder = 'type your password here...' name = 'password' required/>
+       <button type ='submit'>log in</button>
+       <span>
+       <label>
+           <input type = 'checkbox' style = 'text-transform:capitalize'/>
+           Remember me!
+           
+       </label>
+       <span  style = 'margin-left:15rem' class = 'newCreate'>don't have an account?
+       <a href = 'signUp'>Create one</a>
+       </span>
+       </span>
+        </form>
+    </div>
+    </main>
+    {{>footer}}
+</body>
+</html>
